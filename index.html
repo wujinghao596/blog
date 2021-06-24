@@ -1,0 +1,313 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>梦兮</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/carouse.css">
+    <link rel="stylesheet" href="icons/entypo.css">
+    <link rel="stylesheet" href="css/navtool.css">
+    <link href="http://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/m.css" rel="stylesheet">
+    <script src="js/scrollReveal.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/modernizr.js"></script>
+    <![endif]-->
+    <script>
+    window.onload = function() {
+        var oH2 = document.getElementsByTagName("h2")[0];
+        var oUl = document.getElementsByTagName("ul")[0];
+        oH2.onclick = function() {
+            var style = oUl.style;
+            style.display = style.display == "block" ? "none" : "block";
+            oH2.className = style.display == "block" ? "open" : ""
+        }
+    }
+    </script>
+</head>
+<!-- 头部导航栏开始 -->
+<header>
+    <canvas id="cas"></canvas>
+    <div class="tophead">
+        <div class="logo"><a href="">梦兮</a></div>
+        <div id="mnav">
+            <h2><span class="navicon"></span></h2>
+            <ul>
+                <li><a href="index.html">网站首页</a></li>
+                <li><a href="about.html">关于我</a></li>
+                <li><a href="list.html">文章列表</a></li>
+                <li><a href="share.html">相册</a></li>
+                <li><a href="list.html">微语</a></li>
+                <li><a href="list.html">时间轴</a></li>
+                <!--  <li><a href="info.html">文字内容页</a></li>
+                <li><a href="info_image.html">图片内容页</a></li> -->
+                <li><a href="gbook.html">留言</a></li>
+            </ul>
+        </div>
+        <nav class="topnav" id="topnav">
+            <ul>
+                <li><a href="index.html">网站首页</a></li>
+                <li><a href="about.html">关于我</a></li>
+                <li><a href="list.html">文章列表</a></li>
+                <li><a href="share.html">相册</a></li>
+                <li><a href="list.html">微语</a></li>
+                <li><a href="list.html">时间轴</a></li>
+                <!-- <li><a href="info.html">文字内容页</a></li>
+                <li><a href="info_image.html">图片内容页</a></li> -->
+                <li><a href="gbook.html">留言</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- 头部导航栏结束 -->
+<!-- 轮播图开始 -->
+<div class="picshow">
+</div>
+<!-- 轮播图结束 -->
+<!-- 内容开始 -->
+<article>
+    <!-- 博客内容开始 -->
+    <div class="blogs">
+        <div class='o-sliderContainer hasShadow ' id="pbSliderWrap3">
+            <div class='o-slider' id='pbSlider3'>
+                <a href="">
+                    <div class="o-slider--item" data-image="">
+                        <div class="o-slider-textWrap">
+                            <h1 class="o-slider-title">This is a title</h1>
+                            <span class="a-divider"></span>
+                            <h2 class="o-slider-subTitle">This is a sub title</h2>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="o-slider--item" data-image="http://paan0ksle.bkt.clouddn.com/9fd73828gy1fs687x43sij20zk0qowow.jpg">
+                        <div class="o-slider-textWrap">
+                            <h1 class="o-slider-title">This is a title</h1>
+                            <span class="a-divider"></span>
+                            <h2 class="o-slider-subTitle">This is a sub title</h2>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="o-slider--item" data-image="http://paan0ksle.bkt.clouddn.com/asd.jpeg">
+                        <div class="o-slider-textWrap">
+                            <h1 class="o-slider-title">This is a title</h1>
+                            <span class="a-divider"></span>
+                            <h2 class="o-slider-subTitle">This is a sub title</h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <li data-scroll-reveal="enter bottom over"><span class="blogpic"><a href=""><img src="images/text02.jpg"></a></span>
+            <h3 class="blogtitle"><a href="">经典句子</a></h3>
+            <div class="bloginfo">
+                <p>我不是天生的王者，但我骨子里流动着不让我低头的血液。</p>
+            </div>
+            <div class="autor"><span class="lm"><a href="" title="CSS3|Html5" target="_blank" class="classname">CSS3|Html5</a></span><span class="dtime">2021-06-25</span><span class="viewnum">浏览（<a href="">0</a>）</span><span class="readmore"><a href="">阅读文章</a></span></div>
+        </li>
+        <li data-scroll-reveal="enter bottom over"><span class="blogpic"><a href=""><img src="images/text02.jpg"></a></span>
+            <h3 class="blogtitle"><a href="">经典句子</a></h3>
+            <div class="bloginfo">
+                <p>我不管这个世上的人怎么说我，我只想依照我的信念做事， 绝不后悔，不管现在将都一样。</p>
+            </div>
+            <div class="autor"><span class="lm"><a href="" title="CSS3|Html5" target="_blank" class="classname">CSS3|Html5</a></span><span class="dtime">2021-06-24</span><span class="viewnum">浏览（<a href="">0</a>）</span><span class="readmore"><a href="">阅读文章</a></span></div>
+        </li>
+        <li data-scroll-reveal="enter bottom over"><span class="blogpic"><a href=""><img src="images/text02.jpg"></a></span>
+            <h3 class="blogtitle"><a href="">经典句子</a></h3>
+            <div class="bloginfo">
+                <p>不要随随便便同情失败者，这会伤了他的尊心。</p>
+            </div>
+            <div class="autor"><span class="lm"><a href="" title="CSS3|Html5" target="_blank" class="classname">CSS3|Html5</a></span><span class="dtime">2021-06-23</span><span class="viewnum">浏览（<a href="">0</a>）</span><span class="readmore"><a href="">阅读文章</a></span></div>
+        </li>
+        <li data-scroll-reveal="enter bottom over"><span class="blogpic"><a href=""><img src="images/text02.jpg"></a></span>
+            <h3 class="blogtitle"><a href="">经典句子</a></h3>
+            <div class="bloginfo">
+                <p>这个世界并不是掌握在那些嘲笑者的手种，而恰恰掌握在能够经受得住嘲笑与批评忍不断往前走的人手中。</p>
+            </div>
+            <div class="autor"><span class="lm"><a href="" title="CSS3|Html5" target="_blank" class="classname">CSS3|Html5</a></span><span class="dtime">2021-6-22</span><span class="viewnum">浏览（<a href="">0</a>）</span><span class="readmore"><a href="">阅读文章</a></span></div>
+        </li>
+        <li data-scroll-reveal="enter bottom over"><span class="blogpic"><a href=""><img src="images/text02.jpg"></a></span>
+            <h3 class="blogtitle"><a href="">经典句子</a></h3>
+            <div class="bloginfo">
+                <p>我不是英雄，我只做我想做的事，保护我想要保护的人而已。</p>
+            </div>
+            <div class="autor"><span class="lm"><a href="/" title="CSS3|Html5" target="_blank" class="classname">CSS3|Html5</a></span><span class="dtime">2021-06-21</span><span class="viewnum">浏览（<a href="">0</a>）</span><span class="readmore"><a href="">阅读文章</a></span></div>
+        </li>
+        <li data-scroll-reveal="enter bottom over"><span class="blogpic"><a href="/"><img src="images/text02.jpg"></a></span>
+            <h3 class="blogtitle"><a href="">经典句子</a></h3>
+            <div class="bloginfo">
+                <p>人生中有些事你不竭尽所能去做，你永远不知道你己有多出色。</p>
+            </div>
+            <div class="autor"><span class="lm"><a href="" title="CSS3|Html5" target="_blank" class="classname">CSS3|Html5</a></span><span class="dtime">2021-06-20</span><span class="viewnum">浏览（<a href="">0</a>）</span><span class="readmore"><a href="">阅读文章</a></span></div>
+        </li>
+        <li data-scroll-reveal="enter bottom over"><span class="blogpic"><a href=""><img src="images/text02.jpg"></a></span>
+            <h3 class="blogtitle"><a href="">经典句子</a></h3>
+            <div class="bloginfo">
+                <p>遇到迷茫时，任何人都会变得软弱。一旦坚信自己可以帮到别人，他们就会变得很强大。</p>
+            </div>
+            <div class="autor"><span class="lm"><a href="" title="CSS3|Html5" target="_blank" class="classname">CSS3|Html5</a></span><span class="dtime">2021-06-20</span><span class="viewnum">浏览（<a href="">0</a>）</span><span class="readmore"><a href="">阅读文章</a></span></div>
+        </li>
+        <li data-scroll-reveal="enter bottom over"><span class="blogpic"><a href=""><img src="images/text02.jpg"></a></span>
+            <h3 class="blogtitle"><a href="">经典句子</a></h3>
+            <div class="bloginfo">
+                <p>只管把目标定在高峰，人家要笑就让他去笑。</p>
+            </div>
+            <div class="autor"><span class="lm"><a href="/" title="CSS3|Html5" target="_blank" class="classname">CSS3|Html5</a></span><span class="dtime">2021-06-19</span><span class="viewnum">浏览（<a href="">0</a>）</span><span class="readmore"><a href="">阅读文章</a></span></div>
+        </li>
+    </div>
+    <!-- 博客内容结束 -->
+    <!-- 内容侧边栏开始 -->
+    <div class="sidebar">
+        <div class="paihang">
+            <h2 class="hometitle">最新发布</h2>
+            <ul>
+                <li><b><a href="" target="_blank">【草帽海贼团船长】蒙奇.D.路飞</a></b>
+                    <p><i><img src="images/t02.jpg"></i>绰号：草帽，东海-哥亚王国-风车镇出身，能力有：橡胶果实、霸王色霸气、武装色霸气、见闻色霸气、体术，悬赏金十五亿。
+
+                        目标：成为海贼王。    </p>
+                </li>
+                <li><b><a href="" target="_blank">【草帽海贼团副船长】罗罗诺亚·索隆</a></b>
+                    <p><i><img src="images/t03.jpg"></i>绰号：海贼猎人，东海-霜月村出身，能力有：剑术、武装色霸气、见闻色霸气，悬赏金三亿两千万。
+
+                        目标：成为世界第一的大剑豪。</p>
+                </li>
+            </ul>
+        </div>
+        <div class="aboutme">
+            <h2 class="ab_title">关于我</h2>
+           
+            <div class="ab_con">
+                <div class="avatar"> <img src="images/avatar.jpg"> </div>
+                <p>网名：梦兮 | 喜欢悠闲独自在</p>
+                <p>职业：Web前端设计师、网页设计</p>
+                <p>籍贯：江西省—南昌市</p>
+                <p>邮箱：wujinghao596@163.com</p>
+            </div>
+        </div>
+        <div class="search">
+            <form action="/e/search/index.php" method="post" name="searchform" id="searchform">
+                <input name="keyboard" id="keyboard" class="input_text" style="color: rgb(153, 153, 153);" onfocus="if(value=='请输入要搜索的文章'){this.style.color='#000';value=''}" onblur="if(value==''){this.style.color='#999';value='请输入要搜索的文章'}" type="text" placeholder="请输入要搜索的文章">
+                <input name="show" value="title" type="hidden">
+                <input name="tempid" value="1" type="hidden">
+                <input name="tbname" value="news" type="hidden">
+                <input name="Submit" class="input_submit" value="搜索" type="submit">
+            </form>
+        </div>
+        <div class="cloud">
+            <h2 class="hometitle">标签云</h2>
+            <ul>
+                <a href="">HTML</a>
+                <a href="">PHP</a>
+                <a href="">JS</a>
+                <a href="">JQUERY</a>
+                <a href="">NODE.JS</a>
+                <a href="">VUE</a>
+                <a href="">MYSQL</a>
+            </ul>
+        </div>
+        <div class="paihang">
+            <h2 class="hometitle">点击排行</h2>
+            <ul>
+                <li><b><a href="" target="_blank">【草帽海贼团航海士】娜美</a></b>
+                    <p><i><img src="images/t06.jpg"></i>绰号：小贼猫，东海-可可亚西村出身，能力有：武器天候棒，悬赏金六千六百万。
+
+                        目标：绘制世界地图。</p>
+                </li>
+                <li><b><a href="" target="_blank"> 【草帽海贼团狙击手】乌索普</a></b>
+                    <p><i><img src="images/t05.jpg"></i>绰号：狙击王，东海-西罗普村出身，能力有：狙击、见闻色霸气，悬赏金两亿。
+
+                        目标：成为勇敢的海上战士。</p>
+                </li>
+                <li><b><a href="" target="_blank">【草帽海贼团厨师】文斯莫克·山治</a></b>
+                    <p><i><img src="images/t04.jpg"></i>绰号：黑足，东海-西罗普村出身，能力有：踢技、武装色霸气、见闻色霸气，悬赏金三亿三千万。   
+
+                        目标：找到All Blue。</p>
+                </li>
+                <li><b><a href="" target="_blank">【草帽海贼团船医】托尼托尼·乔巴</a></b>
+                    <p><i><img src="images/t08.jpg"></i>绰号：爱吃棉花糖的乔巴， 伟大航路·磁鼓岛-无名国出身，能力有：人人果实，悬赏金一百。
+
+                        目标：制作出"万能药"，帮助所有需要帮助的人。</p>
+                </li>
+                <li><b><a href="" target="_blank">【草帽海贼团考古学家】妮可·罗宾</a></b>
+                    <p><i><img src="images/t07.jpg"></i>绰号：恶魔之子， 西海-欧哈拉出身，能力有：花花果实，悬赏金一亿三千万。   
+
+                        目标：解开历史正文，了解空白的100年。 </p>
+                </li>
+                <li><b><a href="" target="_blank">【草帽海贼团船匠】弗兰奇</a></b>
+                    <p><i><img src="images/t010.jpg"></i>绰号：改造人，南海某国出身，能力有：改造武器，悬赏金九千四百万。
+
+                        目标：乘坐自己制作的梦想之船绕伟大航线一周。 </p>
+                </li>
+            </ul>
+        </div>
+        <div class="links">
+            <h2 class="hometitle">友情链接</h2>
+            <ul>
+                <li><a href="" title="梦兮个人博客">梦兮个人博客</a></li>
+                <li><a href="" title="梦兮个人博客">梦兮个人博客</a></li>
+                <li><a href="" title="梦兮个人博客">梦兮个人博客</a></li>
+            </ul>
+        </div>
+        <div class="weixin">
+            <h2 class="hometitle">官方微信</h2>
+            <ul>
+                <img src="images/wx.jpg">
+            </ul>
+        </div>
+    </div>
+    <!-- 内容侧边栏结束 -->
+</article>
+<!-- 内容结束 -->
+<div class="blank"></div>
+<!-- 底部开始 -->
+<footer>
+    <p>Design by <a href="">梦兮</a>
+</footer>
+<!-- 底部结束 -->
+<!-- 小工具 -->
+<div class="model-2">
+    <div class="float-btn-group">
+        <button class="btn-float btn-triger pink"><i class="fa fa-home"></i></button>
+        <div class="btn-list"><a href="#" class="btn-float yellow"><i class="fa fa-qq"></i></a><a href="#" class="btn-float blue"><i class="fa fa-weibo"> </i></a><a href="#" class="btn-float green"><i class="fa fa-github">   </i></a><a href="#" class="btn-float purple"><i class="fa fa-user"> </i></a></div>
+    </div>
+</div>
+<!-- 小工具结束 -->
+<script src='js/jquery-2.1.1.min.js'></script>
+<script src="js/nav.js"></script>
+<script src='js/hammer.min.js'></script>
+<script src='js/slider.js'></script>
+<script src="js/canvas.js"></script>
+<script>
+//轮播图样式
+$('#pbSlider3').pbTouchSlider({
+    slider_Wrap: '#pbSliderWrap3',
+    slider_Threshold: 50,
+    slider_Speed: 400,
+    slider_Ease: 'linear',
+    slider_Breakpoints: {
+        default: {
+            height: 400
+        },
+        tablet: {
+            height: 300,
+            media: 1024
+        },
+        smartphone: {
+            height: 200,
+            media: 768
+        }
+    }
+});
+//声明滚动样式
+window.scrollReveal = new scrollReveal();
+$('.btn-triger').click(function() {
+    $(this).closest('.float-btn-group').toggleClass('open');
+});
+</script>
+</body>
+
+</html>

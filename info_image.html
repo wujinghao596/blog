@@ -1,0 +1,356 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>梦兮</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/base.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<link href="css/info_image.css" rel="stylesheet">
+<link href="css/m.css" rel="stylesheet">
+<script src="js/scrollReveal.js"></script>
+<script src='js/jquery-2.1.1.min.js'></script>
+<script src="js/piccontent.min.js" type="text/javascript"></script>
+
+<!--[if lt IE 9]>
+<script src="js/modernizr.js"></script>
+<![endif]-->
+<script>
+window.onload = function ()
+{
+  var oH2 = document.getElementsByTagName("h2")[0];
+  var oUl = document.getElementsByTagName("ul")[0];
+  oH2.onclick = function ()
+  {
+    var style = oUl.style;
+    style.display = style.display == "block" ? "none" : "block";
+    oH2.className = style.display == "block" ? "open" : ""
+  }
+}
+</script>
+</head>
+<body>
+<header>
+  <canvas id="cas" ></canvas>
+  <div class="tophead">
+    <div class="logo"><a href="/">梦兮</a></div>
+    <div id="mnav">
+      <h2><span class="navicon"></span></h2>
+      <ul>
+        <li><a href="index.html">网站首页</a></li>
+        <li><a href="about.html">关于我</a></li>
+        <li><a href="share.html">相册</a></li>
+        <li><a href="list.html">文章列表</a></li>
+        <li><a href="info.html">文字内容页</a></li>
+        <li><a href="info_image.html">图片内容页</a></li>
+        <li><a href="gbook.html">留言</a></li>
+        
+      </ul>
+    </div>
+    <nav class="topnav" id="topnav">
+      <ul>
+        <li><a href="index.html">网站首页</a></li>
+        <li><a href="about.html">关于我</a></li>
+        <li><a href="share.html">相册</a></li>
+        <li><a href="list.html">文章列表</a></li>
+        <li><a href="info.html">文字内容页</a></li>
+        <li><a href="info_image.html">图片内容页</a></li>
+        <li><a href="gbook.html">留言</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<article>
+  <div class="picsbox" style="margin-top:20px">
+	<main>
+	    <div class="bodymodal"></div>
+	    <!--播放到第一张图的提示-->
+	    <div class="firsttop">
+	      <div class="firsttop_right">
+	        <div class="close2"> <a class="closebtn1" title="关闭" href="javascript:void(0)"></a> </div>
+	        <div class="replay">
+	          <h2 id="div-end-h2"> 已到第一张图片了。 </h2>
+	          <p> <a class="replaybtn1" href="javascript:;">重新播放</a> </p>
+	        </div>
+	      </div>
+	    </div>
+	    <!--播放到最后一张图的提示-->
+	    <div class="endtop">
+	      <div class="firsttop_right">
+	        <div class="close2"> <a class="closebtn2" title="关闭" href="javascript:void(0)"></a> </div>
+	        <div class="replay">
+	          <h2 id="H1"> 已到最后一张图片了。 </h2>
+	          <p> <a class="replaybtn2" href="javascript:;">重新播放</a> </p>
+	        </div>
+	      </div>
+	    </div>
+	    <!--弹出层结束--> 
+	    <!--图片特效内容开始-->
+	    <div class="piccontext">
+	      <h2> 海贼人员 </h2>
+	     <div class="news_author">
+            <span class="au01">
+              <a href="">伍经豪</a>
+            </span>
+            <span class="au02">2021-06-25</span><span class="au03">共<b>1555559609</b>人围观
+            </span>
+          </div>
+          <div class="tags"><a href="" target="_blank">个人博客</a> &nbsp; <a href="" target="_blank">小世界</a></div>
+	      <!--大图展示-->
+	      <div class="picshow">
+	        <div class="picshowtop"> <a href=""><img src="images/1.jpg" alt="" id="pic1" curindex="0"></a> <a id="preArrow" href="javascript:void(0)" class="contextDiv" title="上一张"><span id="preArrow_A" style="display: none;"></span></a> <a id="nextArrow" href="javascript:void(0)" class="contextDiv" title="下一张"><span id="nextArrow_A" style="display: none;"></span></a> </div>
+	        <div class="picshowtxt">
+	          <div class="picshowtxt_left"><span>1</span>/<i>12</i></div>
+	          <div class="picshowtxt_right">海贼王</div>
+	        </div>
+	        <div class="picshowlist">
+	          <div class="picshowlist_mid">
+	            <div class="picmidleft"> <a href="javascript:void(0)" id="preArrow_B"><span class="sleft"></span></a> </div>
+	            <div class="picmidmid">
+	              <ul>
+	                <li> <a href="javascript:void(0);"><img src="images/1.jpg" alt="" bigimg="images/1.jpg" text="海贼王罗杰 冥王雷利 御田 贾巴" class="selectpic"></a></li>
+	                <li> <a href="javascript:void(0);"><img src="images/2.jpg" alt="" bigimg="images/2.jpg" text="白胡子"></a></li>
+	                <li> <a href="javascript:void(0);"><img src="images/3.jpg" alt="" bigimg="images/3.jpg" text="红发"></a></li>
+	                <li> <a href="javascript:void(0);"><img src="images/4.jpg" alt="" bigimg="images/4.jpg" text="凯多"></a></li>
+	                <li> <a href="javascript:void(0);"><img src="images/5.jpg" alt="" bigimg="images/5.jpg" text="big mom"></a></li>
+	                <li> <a href="javascript:void(0);"><img src="images/6.jpg" alt="" bigimg="images/6.jpg" text="黑胡子"></a></li>
+	                <li> <a href="javascript:void(0);"><img src="images/7.jpg" alt="" bigimg="images/7.jpg" text="鹰眼"></a></li>
+	                <li> <a href="javascript:void(0);"><img src="images/8.jpg" alt="" bigimg="images/8.jpg" text="蒙奇.D.卡普"></a></li>
+	                <li> <a href="javascript:void(0);"><img src="images/9.jpg" alt="" bigimg="images/9.jpg" text="蒙奇.D.龙"></a></li>
+	                <li> <a href="javascript:void(0);"><img src="images/10.jpg" alt="" bigimg="images/10.jpg" text="马尔科"></a></li>
+	                <li> <a href="javascript:void(0);"><img src="images/11.jpg" alt="" bigimg="images/11.jpg" text="艾斯"></a></li>
+	                <li> <a href="javascript:void(0);"><img src="images/12.jpg" alt="" bigimg="images/12.jpg" text="萨博"></a></li>
+	              </ul>
+	            </div>
+	            <div class="picmidright"> <a href="javascript:void(0)" id="nextArrow_B"><span class="sright"></span></a> </div>
+	          </div>
+	        </div>
+	      </div>
+	      
+	      <!--列表展示-->
+	      <div class="piclistshow">
+	        <ul>
+	          <li>
+	            <div class="picimg"><img src="images/1.jpg" alt=""></div>
+	            <div class="pictxt">
+	              <h3>海贼王人物 <span>(1/12)</span></h3>
+	            </div>
+	          </li>
+	          <li>
+	            <div class="picimg"><img src="images/2.jpg" alt=""></div>
+	            <div class="pictxt">
+	              <h3>海贼王<span>(2/12)</span></h3>
+	            </div>
+	          </li>
+	          <li>
+	            <div class="picimg"><img src="images/3.jpg" alt=""></div>
+	            <div class="pictxt">
+	              <h3><span>(3/12)</span></h3>
+	            </div>
+	          </li>
+	          <li>
+	            <div class="picimg"><img src="images/4.jpg" alt=""></div>
+	            <div class="pictxt">
+	              <h3><span>(4/12)</span></h3>
+	            </div>
+	          </li>
+	          <li>
+	            <div class="picimg"><img src="images/5.jpg" alt=""></div>
+	            <div class="pictxt">
+	              <h3><span>(5/12)</span></h3>
+	            </div>
+	          </li>
+	          <li>
+	            <div class="picimg"><img src="images/6.jpg" alt=""></div>
+	            <div class="pictxt">
+	              <h3><span>(6/12)</span></h3>
+	            </div>
+	          </li>
+	          <li>
+	            <div class="picimg"><img src="images/7.jpg" alt=""></div>
+	            <div class="pictxt">
+	              <h3><span>(7/12)</span></h3>
+	            </div>
+	          </li>
+	          <li>
+	            <div class="picimg"><img src="images/8.jpg" alt=""></div>
+	            <div class="pictxt">
+	              <h3><span>(8/12)</span></h3>
+	            </div>
+	          </li>
+	          <li>
+	            <div class="picimg"><img src="images/9.jpg" alt=""></div>
+	            <div class="pictxt">
+	              <h3><span>(9/12)</span></h3>
+	            </div>
+	          </li>
+	          <li>
+	            <div class="picimg"><img src="images/10.jpg" alt=""></div>
+	            <div class="pictxt">
+	              <h3><span>(10/12)</span></h3>
+	            </div>
+	          </li>
+	          <li>
+	            <div class="picimg"><img src="images/11.jpg" alt=""></div>
+	            <div class="pictxt">
+	              <h3><span>(11/12)</span></h3>
+	            </div>
+	          </li>
+	          <li>
+	            <div class="picimg"><img src="images/12.jpg" alt=""></div>
+	            <div class="pictxt">
+	              <h3><span>(12/12)</span></h3>
+	            </div>
+	          </li>
+	        </ul>
+	      </div>
+	    </div>
+	    <div class="pictext">
+	      <ul>
+
+        </ul>
+	    </div>
+	    <div class="share">
+	      <p class="diggit"><a href="JavaScript:makeRequest('/e/public/digg/?classid=3&amp;id=19&amp;dotop=1&amp;doajax=1&amp;ajaxarea=diggnum','EchoReturnedText','GET','');"> 很赞哦！ </a>(<b id="diggnum"><script type="text/javascript" src="/e/public/ViewClick/?classid=2&amp;id=20&amp;down=5"></script>13</b>)</p>
+	    </div>
+	    <div class="nextinfo">
+            <p>上一篇：<a href="">作为一个设计师,如果遭到质疑你是否能恪守自己的原则?</a></p>
+            <p>下一篇：<a href="">返回列表</a></p>
+          </div>
+          <div class="otherlink">
+              <h2>相关文章</h2>
+              <ul>
+                <li><a href="" title="【草帽海贼团船长】蒙奇.D.路飞">【草帽海贼团船长】蒙奇.D.路飞</a></li>
+                <li><a href="" title="【草帽海贼团副船长】罗罗诺亚·索隆">【草帽海贼团副船长】罗罗诺亚·索隆</a></li>
+                <li><a href="" title="【草帽海贼团航海士】娜美">【草帽海贼团航海士】娜美</a></li>
+                <li><a href="" title="【草帽海贼团狙击手】乌索普">【草帽海贼团狙击手】乌索普</a></li>
+                <li><a href="" title="【草帽海贼团厨师】文斯莫克·山治">【草帽海贼团厨师】文斯莫克·山治</a></li>
+                <li><a href="" title="【草帽海贼团船医】托尼托尼·乔巴">【草帽海贼团船医】托尼托尼·乔巴</a></li>
+                <li><a href="" title="【草帽海贼团考古学家】妮可·罗宾">【草帽海贼团考古学家】妮可·罗宾</a></li>
+                <li><a href="" title="【草帽海贼团船匠】弗兰奇">【草帽海贼团船匠】弗兰奇</a></li>
+                <li><a href="" title="【草帽海贼团音乐家】布鲁克">【草帽海贼团音乐家】布鲁克</a></li>
+                <li><a href="" title="【草帽海贼团舵手】甚平">【草帽海贼团舵手】甚平</a></li>
+              </ul>
+          </div>
+          <div class="news_pl">
+            <h2>文章评论</h2>
+            <ul>
+              <div class="gbko"> </div>
+            </ul>
+          </div>
+	</main>
+  </div>
+  <div class="sidebar">
+    <div class="search">
+      <form action="/e/search/index.php" method="post" name="searchform" id="searchform">
+        <input name="keyboard" id="keyboard" class="input_text" style="color: rgb(153, 153, 153);" onfocus="if(value=='请输入要搜索的文章'){this.style.color='#000';value=''}" onblur="if(value==''){this.style.color='#999';value='请输入要搜索的文章'}" type="text" placeholder="请输入要搜索的文章">
+        <input name="show" value="title" type="hidden">
+        <input name="tempid" value="1" type="hidden">
+        <input name="tbname" value="news" type="hidden">
+        <input name="Submit" class="input_submit" value="搜索" type="submit">
+      </form>
+    </div>
+    <div class="lmnav">
+      <h2 class="hometitle">分类导航</h2>
+      <ul class="navbor">
+        <li><a href="#">关于我</a></li>
+        <li><a href="share.html">PHP</a>
+          <ul>
+            <li><a href="list.html">Laravel</a></li>
+            <li><a href="#">ThinkPhP</a></li>
+          </ul>
+        </li>
+        <li><a href="list.html">数据库</a>
+          <ul>
+            <li><a href="list.html">Mysql</a></li>
+            <li><a href="#">Memcache</a></li>
+            <li><a href="#">Redis</a></li>
+          </ul>
+        </li>
+        <li><a href="#">日记</a></li>
+      </ul>
+    </div>
+    <div class="cloud">
+      <h2 class="hometitle">标签云</h2>
+      <ul>
+          <a href="">HTML</a>
+          <a href="">PHP</a>
+      </ul>
+    </div>
+    <div class="paihang">
+      <h2 class="hometitle">点击排行</h2>
+      <ul>
+        <li><b><a href="" target="_blank">【草帽海贼团船长】蒙奇.D.路飞</a></b>
+          <p><i><img src="images/t02.jpg"></i>绰号：草帽，东海-哥亚王国-风车镇出身，能力有：橡胶果实、霸王色霸气、武装色霸气、见闻色霸气、体术，悬赏金十五亿。
+
+              目标：成为海贼王。    </p>
+      </li>
+     
+      <li><b><a href="" target="_blank">【草帽海贼团副船长】罗罗诺亚·索隆</a></b>
+        <p><i><img src="images/t03.jpg"></i>绰号：海贼猎人，东海-霜月村出身，能力有：剑术、武装色霸气、见闻色霸气，悬赏金三亿两千万。
+
+            目标：成为世界第一的大剑豪。</p>
+    </li>
+    <li><b><a href="" target="_blank">【草帽海贼团航海士】娜美</a></b>
+      <p><i><img src="images/t06.jpg"></i>绰号：小贼猫，东海-可可亚西村出身，能力有：武器天候棒，悬赏金六千六百万。
+
+          目标：绘制世界地图。</p>
+  </li>
+  <li><b><a href="" target="_blank"> 【草帽海贼团狙击手】乌索普</a></b>
+      <p><i><img src="images/t05.jpg"></i>绰号：狙击王，东海-西罗普村出身，能力有：狙击、见闻色霸气，悬赏金两亿。
+
+          目标：成为勇敢的海上战士。</p>
+  </li>
+  <li><b><a href="" target="_blank">【草帽海贼团厨师】文斯莫克·山治</a></b>
+      <p><i><img src="images/t04.jpg"></i>绰号：黑足，东海-西罗普村出身，能力有：踢技、武装色霸气、见闻色霸气，悬赏金三亿三千万。   
+
+          目标：找到All Blue。</p>
+  </li>
+  <li><b><a href="" target="_blank">【草帽海贼团船医】托尼托尼·乔巴</a></b>
+      <p><i><img src="images/t08.jpg"></i>绰号：爱吃棉花糖的乔巴， 伟大航路·磁鼓岛-无名国出身，能力有：人人果实，悬赏金一百。
+
+          目标：制作出"万能药"，帮助所有需要帮助的人。</p>
+  </li>
+      </ul>
+    </div>
+    <div class="paihang">
+      <h2 class="hometitle">点击排行</h2>
+      <ul>
+        <li><b><a href="" target="_blank">【草帽海贼团船长】蒙奇.D.路飞</a></b>
+          <p><i><img src="images/t02.jpg"></i>绰号：草帽，东海-哥亚王国-风车镇出身，能力有：橡胶果实、霸王色霸气、武装色霸气、见闻色霸气、体术，悬赏金十五亿。
+
+              目标：成为海贼王。    </p>
+      </li>
+     
+      <li><b><a href="" target="_blank">【草帽海贼团副船长】罗罗诺亚·索隆</a></b>
+        <p><i><img src="images/t03.jpg"></i>绰号：海贼猎人，东海-霜月村出身，能力有：剑术、武装色霸气、见闻色霸气，悬赏金三亿两千万。
+
+            目标：成为世界第一的大剑豪。</p>
+    </li>
+    <li><b><a href="" target="_blank">【草帽海贼团航海士】娜美</a></b>
+      <p><i><img src="images/t06.jpg"></i>绰号：小贼猫，东海-可可亚西村出身，能力有：武器天候棒，悬赏金六千六百万。
+
+          目标：绘制世界地图。</p>
+  </li>
+      </ul>
+    </div>
+    <div class="weixin">
+      <h2 class="hometitle">梦兮</h2>
+      <ul>
+        <img src="images/wx.jpg">
+      </ul>
+    </div>
+  </div>
+</article>
+<footer>
+  <p>Design by <a href="/">梦兮</a>
+</footer>
+<script src="js/nav.js"></script>
+<script src='js/jquery-2.1.1.min.js'></script>
+<script src="js/canvas.js"></script>  
+<script>
+//声明滚动样式
+  window.scrollReveal = new scrollReveal();
+</script>
+</body>
+</html>

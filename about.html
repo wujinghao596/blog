@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>梦兮</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/base.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<link href="css/m.css" rel="stylesheet">
+<script src="js/jquery-2.1.1.min.js"></script>
+<!--[if lt IE 9]>
+<script src="js/modernizr.js"></script>
+<![endif]-->
+<script>
+window.onload = function ()
+{
+  var oH2 = document.getElementsByTagName("h2")[0];
+  var oUl = document.getElementsByTagName("ul")[0];
+  oH2.onclick = function ()
+  {
+    var style = oUl.style;
+    style.display = style.display == "block" ? "none" : "block";
+    oH2.className = style.display == "block" ? "open" : ""
+  }
+}
+</script>
+</head>
+<body>
+<header>
+  <canvas id="cas" ></canvas>
+  <div class="tophead">
+    <div class="logo"><a href="/">梦兮</a></div>
+    <div id="mnav">
+      <h2><span class="navicon"></span></h2>
+      <ul>
+        <li><a href="index.html">网站首页</a></li>
+        <li><a href="about.html">关于我</a></li>
+        <li><a href="share.html">相册</a></li>
+        <li><a href="list.html">文章列表</a></li>
+        <li><a href="info.html">文字内容页</a></li>
+        <li><a href="info_image.html">图片内容页</a></li>
+        <li><a href="gbook.html">留言</a></li>
+        
+      </ul>
+    </div>
+    <nav class="topnav" id="topnav">
+      <ul>
+        <li><a href="index.html">网站首页</a></li>
+        <li><a href="about.html">关于我</a></li>
+        <li><a href="share.html">相册</a></li>
+        <li><a href="list.html">文章列表</a></li>
+        <li><a href="info.html">文字内容页</a></li>
+        <li><a href="info_image.html">图片内容页</a></li>
+        <li><a href="gbook.html">留言</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<article>
+  <div class="about_me" style="margin-top:20px">
+  <div class="infosbox">
+    <main>
+    <div class="newsview">
+      <h3 class="news_title">个人博客，属于我的小世界！</h3>
+      <div class="about_info">
+        <ul>
+          <li class="author">作者：<a href="/">伍经豪</a></li>
+          <li class="lmname"><a href="/">学无止境</a></li>
+          <li class="timer">时间：2021-06-25</li>
+          <li class="view">5596人已阅读</li>
+        </ul>
+      </div>
+      <div class="tags"><a href="/" target="_blank">个人博客</a> &nbsp; <a href="/" target="_blank">小世界</a></div>
+      <div class="news_about"><strong>简介</strong>个人博客，用来做什么？我可能把它当做一个记录我学习成长的地方，或者记录一些生活的一些趣事，相当于一个网络记事本，写上一些关于自己生活工作中的小情小事，也会放上一些照片，音乐。访问自己的网站，一边听着音乐，一边写写文章，不要好快活！</div>
+      <div class="news_con"> 
+        
+      </div>
+    </div>
+    <div class="share">
+      <p class="diggit"><a href="JavaScript:makeRequest('/e/public/digg/?classid=3&amp;id=19&amp;dotop=1&amp;doajax=1&amp;ajaxarea=diggnum','EchoReturnedText','GET','');"> 很赞哦！ </a>(<b id="diggnum"><script type="text/javascript" src="/e/public/ViewClick/?classid=2&amp;id=20&amp;down=5"></script>13</b>)</p>
+    </div>
+    <div class="nextinfo">
+      <p>上一篇：<a href="">作为一个设计师,如果遭到质疑你是否能恪守自己的原则?</a></p>
+      <p>下一篇：<a href="">返回列表</a></p>
+    </div>
+    <div class="news_pl">
+      <h2>文章评论</h2>
+      <ul>
+        <div class="gbko"> </div>
+      </ul>
+    </div>
+</main>
+  </div>
+     </ul>
+  </div>
+  </div>
+  <div class="sidebar">
+    <div class="search">
+      <form action="/e/search/index.php" method="post" name="searchform" id="searchform">
+        <input name="keyboard" id="keyboard" class="input_text" style="color: rgb(153, 153, 153);" onfocus="if(value=='请输入要搜索的文章'){this.style.color='#000';value=''}" onblur="if(value==''){this.style.color='#999';value='请输入要搜索的文章'}" type="text" placeholder="请输入要搜索的文章">
+        <input name="show" value="title" type="hidden">
+        <input name="tempid" value="1" type="hidden">
+        <input name="tbname" value="news" type="hidden">
+        <input name="Submit" class="input_submit" value="搜索" type="submit">
+      </form>
+    </div>
+    <div class="cloud">
+      <h2 class="hometitle">标签云</h2>
+      <ul>
+          <a href="">HTML</a>
+          <a href="">PHP</a>
+          <a href="">Lunmx</a>
+          <a href="">Unbuntu</a>
+          <a href="">Mysql</a>
+          <a href="">Redis</a>
+          <a href="">Laravel</a>
+          <a href="">Vue</a>
+          <a href="">日记</a>
+      </ul>
+    </div>
+    <div class="paihang">
+      <h2 class="hometitle">最新发布</h2>
+      <ul>
+        <li><b><a href="" target="_blank">【草帽海贼团船长】蒙奇.D.路飞</a></b>
+          <p><i><img src="images/t02.jpg"></i>绰号：草帽，东海-哥亚王国-风车镇出身，能力有：橡胶果实、霸王色霸气、武装色霸气、见闻色霸气、体术，悬赏金十五亿。
+
+            目标：成为海贼王。    </p>
+        </li>
+        <li><b><a href="" target="_blank"> 【草帽海贼团副船长】罗罗诺亚·索隆...</a></b>
+          <p><i><img src="images/t03.jpg"></i>绰号：海贼猎人，东海-霜月村出身，能力有：剑术、武装色霸气、见闻色霸气，悬赏金三亿两千万。
+
+            目标：成为世界第一的大剑豪。</p>
+        </li>
+      </ul>
+    </div>
+    <div class="paihang">
+      <h2 class="hometitle">点击排行</h2>
+      <ul>
+        <li><b><a href="" target="_blank">【草帽海贼团航海士】娜美</a></b>
+          <p><i><img src="images/t06.jpg"></i>绰号：小贼猫，东海-可可亚西村出身，能力有：武器天候棒，悬赏金六千六百万。
+
+            目标：绘制世界地图。</p>
+        </li>
+        <li><b><a href="" target="_blank"> 【草帽海贼团狙击手】乌索普</a></b>
+          <p><i><img src="images/t05.jpg"></i>绰号：狙击王，东海-西罗普村出身，能力有：狙击、见闻色霸气，悬赏金两亿。
+
+            目标：成为勇敢的海上战士。.</p>
+        </li>
+        <li><b><a href="" target="_blank">【草帽海贼团厨师】文斯莫克·山治</a></b>
+          <p><i><img src="images/t04.jpg"></i>绰号：黑足，东海-西罗普村出身，能力有：踢技、武装色霸气、见闻色霸气，悬赏金三亿三千万。   
+
+            目标：找到All Blue。</p>
+        </li>
+        <li><b><a href="" target="_blank">【草帽海贼团船医】托尼托尼·乔巴</a></b>
+          <p><i><img src="images/t08.jpg"></i>绰号：爱吃棉花糖的乔巴， 伟大航路·磁鼓岛-无名国出身，能力有：人人果实，悬赏金一百。
+
+            目标：制作出"万能药"，帮助所有需要帮助的人。</p>
+        </li>
+        <li><b><a href="" target="_blank">【草帽海贼团考古学家】妮可·罗宾</a></b>
+          <p><i><img src="images/t07.jpg"></i>绰号：恶魔之子， 西海-欧哈拉出身，能力有：花花果实，悬赏金一亿三千万。   
+
+            目标：解开历史正文，了解空白的100年。 </p>
+        </li>
+        <li><b><a href="" target="_blank">【草帽海贼团船匠】弗兰奇</a></b>
+          <p><i><img src="images/t010.jpg"></i>绰号：改造人，南海某国出身，能力有：改造武器，悬赏金九千四百万。
+
+            目标：乘坐自己制作的梦想之船绕伟大航线一周。</p>
+        </li>
+      </ul>
+    </div>
+    <div class="weixin">
+      <h2 class="hometitle">官方微信</h2>
+      <ul>
+        <img src="images/wx.jpg">
+      </ul>
+    </div>
+  </div>
+</article>
+<footer>
+  <p>Design by <a href="">梦兮</a>
+</footer>
+<script src="js/nav.js"></script>
+<script src='js/jquery-2.1.1.min.js'></script>
+<script src="js/canvas.js"></script>  
+<script type="text/javascript">
+jQuery.noConflict();
+jQuery(function() { 
+    var elm = jQuery('#left_flow2'); 
+    var startPos = jQuery(elm).offset().top; 
+    jQuery.event.add(window, "scroll", function() { 
+        var p = jQuery(window).scrollTop(); 
+        jQuery(elm).css('position',((p) > startPos) ? 'fixed' : ''); 
+
+        jQuery(elm).css('top',((p) > startPos) ? '0' : '');
+    }); 
+}); 
+</script>
+</body>
+</html>
+
